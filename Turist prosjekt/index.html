@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Lahore</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+.direction{
+    text-align: center;
+}
+.direction button{
+    font-family: cursive;
+    font-weight: bold;
+    background-image: linear-gradient(to top, #AEC0CE, #ECECF2);  /* bemerk */
+    border:none;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin:0 10px;
+}
+.direction button:hover{
+    cursor: pointer;
+}
+.item{
+    border-radius: 15px;
+    width:300px;
+    height:500px;
+    background-image: linear-gradient(to top, lightgray, #ECECF2); 
+    overflow: hidden;       /* bemerk */
+    transition: 0.5s;
+    margin:10px;
+    scroll-snap-align: start;         /* bemerk */
+    
+}
+.item .avatar{
+    display: block;               /* bemerk */
+    margin:50px auto 10px;
+    width:250px;
+    height:200px;
+    object-fit: cover;           /* bemerk */
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);     /* bemerk */
+}
+.item .content{
+    padding:30px;
+    font-family: monospace;
+    text-align: center;
+}
+
+
+#list{
+    display: flex;           /* bemerk */
+   
+    
+}
+
+#list>a{
+    text-decoration: none;
+    color: black;
+}
+
+#formList{
+    width:1280px;
+    max-width: 100%;
+    overflow: auto;
+    margin:100px auto 50px;
+    scroll-behavior: smooth;
+    scroll-snap-type: both;          /* bemerk */
+    margin-top: 80%;
+    border-top: solid lightgray 9px;
+    padding-top: 100px;
+}
+#formList::-webkit-scrollbar{
+    display: none;                   /* bemerk */
+}
+
+h2{
+    margin-bottom: 50px;
+}
+
+.nederst_2{
+    margin-top: 140%;
+}
+
+    </style>
+
+    
+</head>
+<body>
+
+<div class="hero">
+    <nav>
+        <a href="index.html">
+        <div class="logo">
+            <img src="bilder/logo.png" alt="" height="77" width="350">
+        </div>
+    </a>
+        <ul>
+             <a href="index.html"> <li>  Home </li> </a>
+
+             <li class="dropdown"> <a href="explore.html"> Explore </a>
+                <div class="dropdown-content">
+                    <a href="attractions.html"> Attractions </a>
+                    <a href="booking.html">Shopping</a>
+                </div>
+            </li>
+
+            <li class="dropdown"> <a href="food.html"> Food & Drinks </a> 
+                <div class="dropdown-content">
+                    <a href="cafe.html">Cafes </a>
+                    <a href="resturant.html"> Restaurants </a>
+                </div>
+            
+            </li>
+
+
+           
+            <li class="dropdown"> <a href="information.html"> Information </a> 
+                <div class="dropdown-content">
+                    <a href="hotel.html">Hotels </a>
+                    <a href="blog.html"> Blog </a>
+                </div>
+            
+            </li>
+            <a  href="kilder.html"> <li> Sources </li> </a>
+            <a href="calender.html"> <li> Calender</li> </a>
+        </ul>
+
+        
+        <button class="button_1" type="button" onclick="window.location.href = 'booking.html';"> Book now  </button>
+    </nav>
+   </div>
+
+<video autoplay loop muted class="bak-video" >                                   <!-- bemerk -->
+    <source src="bilder/Ny lahore video (online-video-cutter.com).mp4" type="video/mp4"> 
+</video>
+
+     <h1 class="tittel"> Lahore</h1>
+
+
+<div class="intro">
+    <h1> Discover places & events around Lahore </h1> 
+    <br>
+    <p>Find information and inspiration about Lahore such as new experiences, attractions, accommodation, events and activities as well as shopping, restaurants, and practical information for your vacation or holiday.</p>
+
+    <div class="avslutning"> 
+        <a href="resturant.html" class="b"  >
+            <h1> Restaurants </h1>
+        </a>
+        <a href="attractions.html" class="c"> 
+            <h1> Attractions </h1>
+         </a>
+        <a href="shopping.html" class="d"> 
+            <h1>shopping  </h1> </a> 
+        <a href="calender.html" class="e"> 
+                <h1> Calendar </h1> </a> 
+    </div>
+
+    <div id="formList">
+        <h2> Blog</h2>
+        <div id="list">
+            <a href="cinemas.html"> 
+             <div class="item">
+                <img src="bilder/blog_tittel_3.jpeg" class="avatar">
+                <div class="content">
+                    <h3> 9 of the Best Dessert Places in Lahore </h3>  <br> <br>
+                    <p> A sweet tooth can kick in at any time for Lahoris, be it for a quick morning....</p>
+
+                </div>
+             </div>
+            </a>
+            <a href="cinemas.html"> 
+            <div class="item">
+                <img src="bilder/blog_tittel_2.jpeg" class="avatar">
+                <div class="content">
+                    <h3> 7 Top Cinemas in Lahore </h3> <br> <br>
+                     <p>As home to Pakistan’s entertainment industry....</p>
+
+                </div>
+            </div>
+        </a>
+        <a href="cinemas.html"> 
+            <div class="item">
+                <img src="bilder/blog_tittel_4.jpeg" class="avatar">
+                <div class="content">
+                    <h3> 15 of the Absolute Best Burgers in Lahore – The juicy, the cheesy and the greasy </h3> <br> <br>
+                    <p> There was a time when the ‘burger scene’ in Lahore was McDonald’s Big Mac or a.... </p> 
+
+                </div>
+            </div>
+        </a>
+        <a href="cinemas.html"> 
+            <div class="item">
+                <img src="bilder/blog_tittel_5.jpeg" class="avatar">
+                <div class="content">
+                    <h3> 10 Best English Breakfast Places in Lahore </h3>  <br> <br>
+                    <p> Starting your morning with a great breakfast is all you need to brighten up the rest....</p>
+
+                </div>
+            </div>
+        </a>
+        <a href="cinemas.html"> 
+            <div class="item">
+                <img src="bilder/blog_tittel_6.jpeg" class="avatar">
+                <div class="content">
+                    <h3> Lahore’s Most Luxurious Addresses – Top 8 Hotels in Lahore that you must Stay In! </h3> <br> <br>
+                     <p> As a tourist, one of the most haunting items on your travel checklist can be.... </p> 
+                </div>
+            </div>
+        </a>
+        <a href="cinemas.html"> 
+            <div class="item">
+                <img src="bilder/blog_tittel_7.jpeg" class="avatar">
+                <div class="content">
+                    <h3> A Shopaholics’ Edit: Top 7 Shopping Malls in Lahore </h3> <br> <br>
+                    <p> If you are an unapologetic shopping addict, scavenging through Lahore, looking for.... </p>
+
+
+                </div>
+            </div>
+        </a>
+        <a href="blog.html"> 
+            <div class="item">
+                <div class="content">
+                    <h2> Read more </h2>
+
+
+                </div>
+            </div>
+        </a>
+        </div>
+    </div>
+
+    
+    <div class="direction">
+        <button id="prev"> < </button>
+        <button id="next"> > </button>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<div class="nederst_2">
+
+</div>
+
+
+
+<script>
+
+window.addEventListener("scroll",skroll)
+let heroEl = document.querySelector(".hero");
+
+ function skroll() {
+    heroEl.classList.toggle("scrolled", window.scrollY > 0);
+};
+ 
+
+
+
+
+document.getElementById('next').onclick = function(){
+    const widthItem = document.querySelector('.item').offsetWidth;
+    document.getElementById('formList').scrollLeft += widthItem;
+}
+document.getElementById('prev').onclick = function(){
+    const widthItem = document.querySelector('.item').offsetWidth;
+    document.getElementById('formList').scrollLeft -= widthItem;
+}
+
+
+</script>
+
+</body>
+</html>
